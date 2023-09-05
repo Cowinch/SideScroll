@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
+:root{
+    --scroll-off-set: 0;
+}
 body{
     background-color: rgb(26, 25, 25);
     -ms-overflow-style: none; /*IE and Edge*/
@@ -13,10 +15,12 @@ body{
 
 #box-one{
     position: relative;
+    left: 0px;
 }
 
 #box-two{
-    position: relative
+    position: relative;
+    left: 200px;
 }
 
 body::-webkit-scrollbar{
@@ -33,5 +37,7 @@ p{
 
 .view-port{
     width: 100vw;
-    height:100vh;
+    height:100dvh;
+    padding: 3px 5px;
+    border: 1px solid white;
 }
